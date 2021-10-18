@@ -1,0 +1,151 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+
+ KULATE ROHY
+ border-radius: 30px;
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+.zbozi{
+    background-color: white;
+    /*display: inline-block;*/
+    margin-left: 100px;
+    width: 670px;
+    height: 440px;
+    border-radius: 30px;
+}
+
+.vizual {
+    /*background-color:seagreen;*/
+    position: relative;
+    width: 335px;
+    height: 440px;
+    background: linear-gradient(0deg, rgba(80,204,73,1) 0%, rgba(6,215,193,1) 100%);
+}
+
+.logo{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.slogan{
+    position: relative;
+    left: 30px;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: Medium;
+    text-align: left;
+    color: white;
+}
+
+.cena{
+    position: absolute;
+    top: 380px;
+    text-align: right;
+    right: 30px;
+    font-size: 28px;
+    font-weight: Medium;
+    color: white;
+}
+
+.zaruka{
+    position: absolute;
+    text-align: right;
+    top: 410px;
+    right: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.bota{
+    position: relative;
+    right: 100px;
+}
+
+.detaily {
+    position: absolute;
+    top: 30px;
+    left: 465px;
+}
+
+.nazev{
+    font-size: 20px;
+    font-weight: Medium;
+    text-transform: uppercase;
+    color: black;
+}
+
+.produkt{
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+
+.popis{
+    width: 305px;
+    
+}
+
+.parametr{
+    font-size: 14px;
+    font-weight: Medium;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+ul li{
+    display: inline;
+    margin: 10px;
+}
+
+.vybrana{
+    color: #f15f42;
+    display:inline;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #f15f42;
+    
+}
+
+.tlacitko {
+    position: relative;
+    background-color:#f15f42; 
+    border-radius:5px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400px;
+    margin: 4px 2px;
+    cursor: pointer;
+    top: 30px;
+  }
